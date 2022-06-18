@@ -33,6 +33,7 @@ def hangman():
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
             if user_letter in word_letters:
+                print('\nYour letter,', user_letter, 'is in the word.')
                 word_letters.remove(user_letter)
                 print('')
 
